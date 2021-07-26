@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/app.css') }}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Flask CGPA CALCULATION</h2>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/calculate" method="POST">
+        <div class="header">
+      <h3>CGPA CALCULATION</h3>
+      
+    </div>
+        <div class="form-group">
+          <label for="Number One">Enter 1st Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num1" />
+        </div>
+
+        <div class="form-group">
+          <label for="Number Two">Enter 2nd Semester SGPA Score </label>
+          <input type="text" placeholder="Grade Average" name="num2" />
+        </div>
+        <div class="form-group">
+          <label for="Number Three">Enter 3rd Semester SGPA Score </label>
+          <input type="text" placeholder="Grade Average" name="num3" />
+        </div>
+        <div class="form-group">
+          <label for="Number Four">Enter 4th Semester SGPA Score </label>
+          <input type="text" placeholder="Grade Average" name="num4" />
+        </div>
+        <div class="form-group">
+          <label for="Number Five">Enter 5th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num5" />
+        </div>
+        <div class="form-group">
+          <label for="Number Six">Enter 6th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num6" />
+        </div>
+        <div class="form-group">
+          <label for="Number Seven">Enter 7th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num7" />
+        </div>
+        <div class="form-group">
+          <label for="Number Eight">Enter 8th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num8" />
+        </div>
+        <div class="form-group">
+          <label for="Number Nine">Enter 9th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num9" />
+        </div>
+        <div class="form-group">
+          <label for="Number Ten">Enter 10th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num10" />
+        </div>
+        <div class="form-group">
+          <label for="Number Eleven">Enter 11th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num11" />
+        </div>
+        <div class="form-group">
+          <label for="Number Twelve">Enter 12th Semester SGPA Score</label>
+          <input type="text" placeholder="Grade Average" name="num12" />
+        </div>
+
+          <input type="submit" value="Click Here to Calculate" id="calc_btn" class="btn" />
+        <br />
+         <div class="alert">
+          {{ result }}
+        </div>
+        </div>
+   
+         </div>
+       
+      </form>
+    </div>
+  </body>
+</html>
